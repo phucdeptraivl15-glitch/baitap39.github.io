@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Nguyễn Trọng Phúc</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        nav {
+            background-color: #0d47a1;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 18px;
+        }
+
+        nav a:hover {
+            background-color: #1976d2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .info, .exercises {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+
+        h2 {
+            color: #1565c0;
+            border-bottom: 2px solid #1565c0;
+            padding-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .exercise-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+        }
+
+        .exercise {
+            border: 1px solid #dbeafe;
+            border-radius: 10px;
+            padding: 18px;
+            background-color: #f8fbff;
+        }
+
+        .exercise h3 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+
+        .exercise p {
+            min-height: 42px;
+            line-height: 1.5;
+        }
+
+        .exercise a {
+            display: inline-block;
+            background-color: #1565c0;
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 6px;
+        }
+
+        .exercise a:hover {
+            background-color: #0d47a1;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="trangchu">
+        <h1>TRANG CHỦ CÁ NHÂN</h1>
+        <p>Bài tập thực hành HTML, CSS và JavaScript</p>
+    </header>
+
+    <nav>
+        <a href="#trangchu">Trang chủ</a>
+        <a href="#thongtin">Thông tin sinh viên</a>
+        <a href="#baitap">Danh sách bài tập</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="info" id="thongtin">
+            <h2>Thông tin sinh viên</h2>
+
+            <p><strong>Họ và tên:</strong> Nguyễn Trọng Phúc</p>
+
+            <p><strong>Mã số sinh viên:</strong> 241A010491</p>
+
+            <p><strong>Email:</strong>
+                <span>phucdeptraivl15@gmail.com</span>
+            </p>
+
+            <p><strong>Môn học:</strong> Thiết kế Web</p>
+
+            <p><strong>Nội dung:</strong> Tổng hợp 6 bài tập thực hành</p>
+        </section>
+
+        <section class="exercises" id="baitap">
+            <h2>Danh sách 6 bài tập</h2>
+
+            <div class="exercise-list">
+
+                <div class="exercise">
+                    <h3>Bài TK5</h3>
+                    <p>Accordion đơn giản với hiệu ứng đóng mở.</p>
+                    <a href="tk5.html">Xem bài tập</a>
+                </div>
+
+                <div class="exercise">
+                    <h3>Bài TK7</h3>
+                    <p>Tạo chuỗi mật khẩu ngẫu nhiên 8 ký tự.</p>
+                    <a href="tk7.html">Xem bài tập</a>
+                </div>
+
+                <div class="exercise">
+                    <h3>Bài TK8</h3>
+                    <p>Chuyển đổi mã màu Hex sang RGB.</p>
+                    <a href="tk8.html">Xem bài tập</a>
+                </div>
+
+                <div class="exercise">
+                    <h3>Bài K4</h3>
+                    <p>Phân trang danh sách gồm 50 mục.</p>
+                    <a href="k4.html">Xem bài tập</a>
+                </div>
+
+                <div class="exercise">
+                    <h3>Bài K6</h3>
+                    <p>Di chuyển khối bằng phím mũi tên.</p>
+                    <a href="k6.html">Xem bài tập</a>
+                </div>
+
+                <div class="exercise">
+                    <h3>Bài K8</h3>
+                    <p>Tính chỉ số BMI và phân loại cân nặng.</p>
+                    <a href="k8.html">Xem bài tập</a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Nguyễn Trọng Phúc</p>
+        <p>Trang web thực hành thiết kế web</p>
+    </footer>
+
+</body>
+</html>
